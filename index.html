@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Break-Even Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  </head>
+  <body>
+	<div class="container-fluid">
+        <div class="row text-center">
+			<div class="col-md-2 col-md-offset-3">
+                <div class="form-group">
+				    <label for="starting_clients">Starting Clients</label>
+				    <input class="form-control text-center" type="text" placeholder="" name="" id="starting-clients">
+                </div>
+			</div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="interval-client-pm">Clients per Month Interval</label>
+    				<input class="form-control text-center" type="text" placeholder="" name="" id="interval-client-pm">
+                </div>
+			</div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="num-of-results">Number of Results</label>
+    				<input class="form-control text-center" type="text" placeholder="" name="" id="num-of-results">
+                </div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-2 col-md-offset-4">
+                <div class="form-group">
+                    <label for="income-per-client">Income per Client per Month</label>
+    				<input class="form-control text-center" type="text" placeholder="" name="" id="income-per-client">
+                </div>
+			</div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="expenditure">Expenditure per Month</label>
+    				<input class="form-control text-center" type="text" placeholder="" name="" id="expenditure">
+                </div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-2 col-md-offset-5">
+				<button type="button" onclick="createChart();" class="btn btn-success">Create Chart</button>
+			</div>
+		</div>
+
+		<div style="width:600px;height:600px;margin:auto;margin-top:100px;" id="chartContainer"><canvas id="myChart" width="600" height="600"></canvas></div>
+	</div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  </body>
+</html>

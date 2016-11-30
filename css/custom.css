@@ -1,0 +1,10 @@
+body {
+	background-color: #fdfdfd;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#myChart {
+	width: 400px;
+	height: 400px;
+}
